@@ -55,7 +55,7 @@ nav .nav-container #login {
     align-items: center;
 }
 
-nav .nav-container .small-button button {
+.small-button button {
     border-radius: 50px;
     padding: 8px;
     border: none;
@@ -176,8 +176,6 @@ main .fourth-block #text5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid greenyellow;
-    /* test */
 }
 
 main .fourth-block #text5 h2 {
@@ -197,13 +195,16 @@ main .fourth-block #text5 h2 {
 /* /main */
 
 footer {
-  background-color: #23272a;
+   background-color: #23272a;
 }
 footer #footer-inner {
   display: flex;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 30px;
   padding-top: 2em;
 }
 /* footer-left */
@@ -215,20 +216,24 @@ footer #footer-inner #footer-left {
   height: 300px;
 }
 footer #footer-inner #footer-left .footer-left-text {
-  background-color: #ff000020;
-  /* test */
+  display: flex;
+  flex-direction: column;
   
   width: 100%;
   height: 200px;
 }
+
+.footer-left-text h3{
+  color: #7289da;
+  font-size: 1.5em;
+}
 /* /footer-left */
 footer #footer-inner #footer-right {
   flex-grow: 1;
-  background-color: #ff000080;
+  
   /* test */
   display: flex;
-  /* justify-content: space-around; */
-  max-width: 700px;
+  
 } 
 footer #footer-inner #footer-right .footer-link-list {
   display: flex;
@@ -239,16 +244,15 @@ footer #footer-inner #footer-right ul {
   list-style-type: none;
 }
 /* footer-bottom */
-/* test */
-footer #footer-bottom > * {
-  background-color: #ff004480;
-}
-/* /test */
+
 footer #footer-bottom {
   display: flex;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 footer #footer-bottom #footer-logo {
   width: 100px;
@@ -257,4 +261,25 @@ footer #footer-bottom #footer-logo {
 footer #footer-bottom #footer-button {
   width: 150px;
   height: 60px;
+}
+
+strong {
+  color: #7289da;
+}
+
+.footer-link-list li {
+  padding: 5px 0 5px 0;
+  color: white;
+}
+
+hr {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #7289da;
+  margin-top: 20px;
+}
+
+.container-centered .small-button button {
+  background-color: #7289da;;
 }
